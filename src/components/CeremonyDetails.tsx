@@ -65,54 +65,27 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                 </div>
               </div>
 
-              {/* Poruwa Ceremony */}
-              <div className="relative group">
+              {/* Time */}
+              <div className="relative group flex items-center min-h-[48px]">
                 <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-lavender/40 shadow-lg flex items-center justify-center group-hover:border-brand-plum group-hover:shadow-[0_4px_15px_rgba(176,137,104,0.3)] transition-all duration-500">
                   <Clock className="w-5 h-5 text-brand-plum group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 mb-3 group-hover:text-brand-plum transition-colors duration-500">
-                    පෝරුවේ චාරිත්‍ර
+                  <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 leading-relaxed group-hover:text-brand-plum transition-colors duration-500">
+                    <span className="font-semibold text-stone-700">වේලාව:</span> 9.00 AM - 4.00 PM
                   </h4>
-                  <div className="space-y-1.5 text-stone-500/90 font-sinhala text-base sm:text-lg">
-                    <p>
-                      <span className="font-semibold text-stone-700">වේලාව:</span> 10.30 AM
-                    </p>
-                  </div>
                 </div>
               </div>
 
-              {/* Lunch */}
-              <div className="relative group">
+              {/* Poruwa Ceremony */}
+              <div className="relative group flex items-center min-h-[48px]">
                 <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-lavender/40 shadow-lg flex items-center justify-center group-hover:border-brand-plum group-hover:shadow-[0_4px_15px_rgba(176,137,104,0.3)] transition-all duration-500">
-                  <Utensils className="w-5 h-5 text-brand-plum group-hover:scale-110 transition-transform duration-500" />
+                  <Sparkles className="w-5 h-5 text-brand-plum group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 mb-3 group-hover:text-brand-plum transition-colors duration-500">
-                    දිවා ආහාරය
+                  <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 leading-relaxed group-hover:text-brand-plum transition-colors duration-500">
+                    <span className="font-semibold text-stone-700">පෝරුවේ චාරිත්‍ර:</span> 10.30 AM
                   </h4>
-                  <div className="space-y-1.5 text-stone-500/90 font-sinhala text-base sm:text-lg">
-                    <p>
-                      <span className="font-semibold text-stone-700">වේලාව:</span> 12.16 PM
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Going Away */}
-              <div className="relative group">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-lavender/40 shadow-lg flex items-center justify-center group-hover:border-brand-plum group-hover:shadow-[0_4px_15px_rgba(176,137,104,0.3)] transition-all duration-500">
-                  <Heart className="w-5 h-5 text-brand-plum group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div>
-                  <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 mb-3 group-hover:text-brand-plum transition-colors duration-500">
-                    පිටත්ව යාම
-                  </h4>
-                  <div className="space-y-1.5 text-stone-500/90 font-sinhala text-base sm:text-lg">
-                    <p>
-                      <span className="font-semibold text-stone-700">වේලාව:</span> 03.50 PM
-                    </p>
-                  </div>
                 </div>
               </div>
 
