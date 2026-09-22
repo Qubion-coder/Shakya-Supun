@@ -10,9 +10,9 @@ const events = [
     color: 'from-rose-400 to-rose-500'
   },
   {
-    time: '10.30 AM',
+    time: '10.00 AM',
     title: 'Poruwa Ceremony & Wedding Function',
-    description: 'Poruwa Ceremony commences at 10.30 am, followed by the wedding function at The Epitome Hotel, Kurunegala.',
+    description: 'Poruwa Ceremony commences at 10.00 am, followed by the wedding function at The Epitome Hotel, Kurunegala.',
     icon: MapPin,
     color: 'from-blue-500 to-blue-600'
   },

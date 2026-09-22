@@ -84,7 +84,7 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                 </div>
                 <div>
                   <h4 className="font-sinhala text-2xl sm:text-3xl text-stone-800 leading-relaxed group-hover:text-brand-plum transition-colors duration-500">
-                    <span className="font-semibold text-stone-700">පෝරුවේ චාරිත්‍ර:</span> 10.30 AM
+                    <span className="font-semibold text-stone-700">පෝරුවේ චාරිත්‍ර:</span> 10.00 AM
                   </h4>
                 </div>
               </div>

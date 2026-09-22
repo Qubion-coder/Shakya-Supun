@@ -39,8 +39,9 @@ export const Admin: React.FC = () => {
   };
 
   const generateFullMessage = (url: string, title: string, name: string) => {
-    const prefix = title ? title + ' ' : '';
-    const fullName = `${prefix}${name}`.trim();
+    const fullName = title.toLowerCase() === 'family'
+      ? `${name.trim()} and Family`
+      : `${title ? title + ' ' : ''}${name}`.trim();
 
     return `Dear ${fullName} ❤️
 
