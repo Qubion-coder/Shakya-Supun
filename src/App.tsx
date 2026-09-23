@@ -44,10 +44,16 @@ export default function App() {
 
   const ensureAudio = useCallback(() => {
     if (!audioRef.current) {
-      audioRef.current = new Audio('/Dreams Come True - Dylan Carwyn Romantic Wedding Song 2025 (Lyrics) - Dazzling Tunes (128k).mp3');
-      audioRef.current.loop = true;
-      audioRef.current.volume = 0.3;
-      audioRef.current.preload = 'none';
+      const audio = new Audio('/Dreams Come True - Dylan Carwyn Romantic Wedding Song 2025 (Lyrics) - Dazzling Tunes (128k).mp3');
+      audio.loop = true;
+      audio.volume = 0.3;
+      audio.preload = 'auto';
+
+      audio.addEventListener('play', () => setIsMusicPlaying(true));
+      audio.addEventListener('pause', () => setIsMusicPlaying(false));
+      audio.addEventListener('ended', () => setIsMusicPlaying(false));
+
+      audioRef.current = audio;
     }
     return audioRef.current;
   }, []);
@@ -62,20 +68,18 @@ export default function App() {
   }, []);
 
   const handleMusicStart = useCallback(() => {
-    setIsMusicPlaying(true);
     const audio = ensureAudio();
     audio.play().catch(console.error);
   }, [ensureAudio]);
 
   const toggleMusic = useCallback(() => {
     const audio = ensureAudio();
-    if (isMusicPlaying) {
-      audio.pause();
-    } else {
+    if (audio.paused) {
       audio.play().catch(console.error);
+    } else {
+      audio.pause();
     }
-    setIsMusicPlaying((playing) => !playing);
-  }, [ensureAudio, isMusicPlaying]);
+  }, [ensureAudio]);
 
   const handleEnvelopeComplete = useCallback(() => {
     requestAnimationFrame(() => {
